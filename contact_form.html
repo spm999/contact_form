@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactForm</title>
+    <link rel="stylesheet" href="contact_form.css">
+    <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico' />
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="count">
+            <h3>Contact Form</h3>
+        </div>
+
+        <form id="form_contact" name="contact_form">
+            <label>First Name</label>
+            <input name="first_name" id="fname" type="text" required placeholder="" />
+            <br>
+            <label>Last Name</label>
+            <input name="last_name" id="sname" type="text" required placeholder="" />
+            <br>
+            <label>Email</label>
+            <input name="email" id="email" type="email" required placeholder="" />
+            <br>
+            <label>Message</label><br>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
+            <div class="center">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <script src="contact_form.js"></script>
+</body>
+
+</html>
